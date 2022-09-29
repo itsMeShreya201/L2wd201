@@ -1,17 +1,17 @@
-let userForm=document.getElementById("user-form");
-const retrieveEntries=()=>{
-    let entries=localStorage.getItem("user-entries");
-    if(entries){entries=JSON.parse(entries);}
-    else{entries=[];}
-    return entries;
-}
+//let userForm=document.getElementById("user-form");
+//const retrieveEntries=()=>{
+  //  let entries=localStorage.getItem("user-entries");
+//    if(entries){entries=JSON.parse(entries);}
+//    else{entries=[];}
+//    return entries;
+//}
 
-window.onload = function() {
-    var date = new Date();
-    var dd = date.getDate();
-    var mm = date.getMonth() + 1;
-    var yyyy = date.getFullYear();
-
+//window.onload = function() {
+  //  var date = new Date();
+    //var dd = date.getDate();
+   // var mm = date.getMonth() + 1;
+    //var yyyy = date.getFullYear();
+/*
     if (dd<10) {
       dd="0"+dd;
     }
@@ -56,21 +56,22 @@ const saveUserForm=(event)=>{
 event.preventDefault();
 const name=document.getElementById("name").value;
 const email=document.getElementById("email").value;
-  const password=document.getElementById("password").value;
-  const dob=document.getElementById("dob").value;
-  const acceptTermsandconditions=document.getElementById("acceptTerms").checked;
+*/
+  //const password=document.getElementById("password").value;
+//  const dob=document.getElementById("dob").value;
+  //const acceptTermsandconditions=document.getElementById("acceptTerms").checked;
 
-const entry={
-name,
-  email,
-  password,
-  dob,
-  acceptTermsandconditions
-};
-userEntries.push(entry);
-  localStorage.setItem("user-entries",JSON.stringify(userEntries));
-  displayEntries();
+//const entry={
+//name,
+  //email,
+  //password,
+  //dob,
+  //acceptTermsandconditions
+//};
+//userEntries.push(entry);
+  //localStorage.setItem("user-entries",JSON.stringify(userEntries));
+  //displayEntries();
 
-}
-userForm.addEventListener("submit",saveUserForm);
-displayEntries();
+//}
+//userForm.addEventListener("submit",saveUserForm);
+//displayEntries();
